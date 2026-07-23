@@ -1,0 +1,16 @@
+#svg-createmotionpath {
+  position: relative;
+}
+
+#svg-createmotionpath .car {
+  position: absolute;
+  width: 16px;
+  height: 8px;
+  left: -8px;
+  top: -5px;
+  color: #FFF;
+}
+
+#svg-createmotionpath .docs-demo-template .car {
+  display: none;
+}

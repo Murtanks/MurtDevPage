@@ -1,0 +1,11 @@
+.header { position: sticky; top: 0; z-index: 100; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; padding: 1.5rem 0 1rem 0; text-align: center; box-shadow: 0 2px 8px rgba(13,35,68,0.10); transition: transform 280ms ease, padding 280ms ease, background-color 280ms ease; font-family: 'Montserrat', Arial, sans-serif; }
+.headerLeft, .headerCenter { display: flex; align-items: center; justify-content: center; width: 100%; }.headerRight { display: none; }
+.headerCompact { flex-direction: row; justify-content: space-between; gap: 1.5rem; padding: 0.35rem 1.5rem; background: rgba(8, 22, 43, 0.94); backdrop-filter: blur(10px); border-bottom: 1px solid #00cfff33; }
+.headerCompact .headerLeft, .headerCompact .headerCenter { width: auto; flex: 0 1 auto; }.headerCompact .headerLeft > div { margin-bottom: 0 !important; }.headerCompact .headerLeft img { width: 64px !important; height: 64px !important; }.headerCompact .headerCenter form { margin: 0; }.headerCompact .headerCenter input { min-width: min(42vw, 250px); }
+.headerHidden { transform: translateY(-120%); pointer-events: none; }
+.floatingLogo { position: fixed; top: 10px; left: 14px; z-index: 101; width: 72px; height: 72px; display: grid; place-items: center; background: rgba(8, 22, 43, 0.92); border: 1px solid #00cfff44; border-radius: 0.75rem; box-shadow: 0 4px 14px #00152c88; backdrop-filter: blur(8px); animation: logoEnter 180ms ease-out; }
+.floatingLogo img { width: 64px; height: 64px; object-fit: contain; }
+@keyframes logoEnter { from { opacity: 0; transform: translateX(-12px); } to { opacity: 1; transform: translateX(0); } }
+@media (max-width: 1000px) { .main { max-width: 98vw; margin: 2rem 0.5rem; padding: 1rem; border-radius: 0.7rem; } }
+.link { text-decoration: none; font-weight: 500; font-size: 1.1rem; padding: 0.3rem 1rem; border-radius: 0.5rem; transition: background 0.2s; }.link:hover { background: #125ea2; }.active { background: #fff; color: #1976d2; }
+.main { max-width: 1500px; margin: 2rem auto; padding: 2rem; background: transparent; border-radius: 1rem; box-shadow: 0 2px 16px rgba(25,118,210,0.08); }

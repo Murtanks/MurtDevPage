@@ -1,0 +1,16 @@
+.bgShapes {
+  position: fixed;
+  inset: 0;
+  z-index: -5;
+  pointer-events: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+.shape {
+  position: absolute;
+  opacity: 0.18;
+  filter: blur(0.5px) drop-shadow(0 0 8px #00cfff88);
+  will-change: transform;
+  transition: opacity 0.5s;
+}
