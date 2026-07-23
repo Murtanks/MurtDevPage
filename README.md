@@ -1,61 +1,53 @@
-# TypeScript Next.js example
+# MurtDev
 
-This is a really simple project that shows the usage of Next.js with TypeScript.
+Sitio web de MurtDev: una vitrina de soluciones digitales a medida para operaciones, inventario, gestión en terreno, reportes e IoT.
 
-## Deploy your own
+La interfaz combina una estética retro/pixel con animaciones ligeras, carruseles de planes y una experiencia responsive.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript&project-name=with-typescript&repository-name=with-typescript)
+## Tecnologías
 
-## How to use it?
+- [Next.js](https://nextjs.org/)
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Anime.js](https://animejs.com/) para animaciones
+- CSS Modules para estilos por componente
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
+## Ejecutar localmente
 
-```bash
-npx create-next-app --example with-typescript with-typescript-app
+1. Clona el repositorio e instala las dependencias:
+
+   ```bash
+   npm install
+   ```
+
+2. Inicia el servidor de desarrollo:
+
+   ```bash
+   npm run dev
+   ```
+
+3. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
+
+> En PowerShell, si `npm` está bloqueado por la política de ejecución, usa `npm.cmd run dev`.
+
+## Scripts disponibles
+
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el entorno de desarrollo. |
+| `npm run build` | Genera la versión de producción. |
+| `npm run start` | Ejecuta la versión de producción compilada. |
+| `npm run type-check` | Revisa tipos de TypeScript sin generar archivos. |
+
+## Estructura del proyecto
+
+```text
+components/  Componentes reutilizables de la interfaz
+pages/       Rutas y páginas de Next.js
+styles/      Estilos globales y CSS Modules
+assets/      Logos y recursos visuales
 ```
 
-```bash
-yarn create next-app --example with-typescript with-typescript-app
-```
+## Estado
 
-```bash
-pnpm create next-app --example with-typescript with-typescript-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This example shows how to integrate the TypeScript type system into Next.js. Since TypeScript is supported out of the box with Next.js, all we have to do is to install TypeScript.
-
-```shell
-npm install --save-dev typescript
-```
-
-```shell
-yarn install --save-dev typescript
-```
-
-```shell
-pnpm install --save-dev typescript
-```
-
-To enable TypeScript's features, we install the type declarations for React and Node.
-
-```shell
-npm install --save-dev @types/react @types/react-dom @types/node
-```
-
-```shell
-yarn install --save-dev @types/react @types/react-dom @types/node
-```
-
-```shell
-pnpm install --save-dev @types/react @types/react-dom @types/node
-```
-
-When we run `next dev` the next time, Next.js will start looking for any `.ts` or `.tsx` files in our project and builds it. It even automatically creates a `tsconfig.json` file for our project with the recommended settings.
-
-Next.js has built-in TypeScript declarations, so we'll get autocompletion for Next.js' modules straight away.
-
-A `type-check` script is also added to `package.json`, which runs TypeScript's `tsc` CLI in `noEmit` mode to run type-checking separately. You can then include this, for example, in your `test` scripts.
+Proyecto en desarrollo. Las soluciones, precios y contenido del sitio pueden cambiar a medida que evolucione MurtDev.
